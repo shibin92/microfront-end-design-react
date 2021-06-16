@@ -1,0 +1,38 @@
+html {
+	height: 100%;
+}
+:root {
+	background-color: #EEEEEE;
+}
+
+.dark-blue {
+	color: #005EB8;
+}
+
+.light-grey {
+	color: #EEEEEE;
+}
+
+.background-white {
+	background-color: #FFFFFF;
+}
+
+.background-light-grey {
+	background-color: #EEEEEE;
+}
+
+.font-weight-normal {
+	font-weight: 400 !important;
+}
+
+.form-label {
+	color: #707272;
+}
+  
+.content-form {
+	border-radius: 10px;
+	background: #FFFFFF;
+	padding: 30px;
+	width: 90%;
+	max-width: 450px;
+}
