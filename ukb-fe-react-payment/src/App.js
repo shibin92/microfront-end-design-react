@@ -1,14 +1,19 @@
-import React from 'react';
-import Routes from './components/Routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { Switch, Route, Router } from 'react-router-dom';
 
-function App() {
+import Login from './components/PaymentLogin/PaymentLogin';
+import Summary from './components/SummaryAmount/SummaryAmount';
+
+export default ({ history }) => {
   return (
-    <div className="container">
-      <center><h1>Payment App</h1></center>
-      <Routes />
+    <div>
+      <Router history={history}>
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/summary" component={Summary} />
+        </Switch>
+      </Router>
     </div>
   );
-}
-
-export default App;
+};

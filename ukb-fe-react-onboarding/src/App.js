@@ -1,13 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import React from 'react';
+import { Switch, Route, Router } from 'react-router-dom';
 
-import Routes from './components/Routes';
+import StartPage from './components/StartPage';
+import MeterPoints from './components/MeterPoints/MeterPoints';
 
-function App() {
-  document.getElementById('root').className = 'background-light-grey';
+export default ({ history }) => {
   return (
-    <Routes />
+    <div>
+      <Router history={history}>
+        <Switch>
+          <Route exact path="/meter-points" component={MeterPoints} />
+          <Route path="/" component={StartPage} />
+        </Switch>
+      </Router>
+    </div>
   );
-}
-
-export default App;
+};

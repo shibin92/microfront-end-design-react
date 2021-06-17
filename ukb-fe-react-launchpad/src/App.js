@@ -1,21 +1,20 @@
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import Button from './Button';
-const OnboardingRoutes = React.lazy(() => import('onboarding/Routes'));
-function App() {
+import Progress from './components/Progress';
+
+const OnboardingLazy = lazy(() => import('./components/OnboardingApp'));
+
+export default () => {
   return (
-    <div>
-      <React.Suspense fallback='Loading Button'>
-        <OnboardingRoutes />
-      </React.Suspense>
-      {/* <h1>MFE1</h1>
-      <Button>
-        {' '}
-        MFE1 Button
-      </Button> */}
-    </div>
+    <BrowserRouter>
+      <div>
+        <Suspense fallback={<Progress />}>
+          <Switch>
+            <Route path="/" component={OnboardingLazy} />
+          </Switch>
+        </Suspense>
+      </div>
+    </BrowserRouter>
   );
-}
-
-export default App;
+};
