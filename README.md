@@ -3,6 +3,8 @@ Microfront end design with react
 
 Steps:
 
+Please Do not delete the package-lock.json for any of the folders
+
 -clone the repo
 -go to the repo folder
 
