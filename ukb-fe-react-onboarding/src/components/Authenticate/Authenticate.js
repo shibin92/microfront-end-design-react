@@ -14,7 +14,7 @@ const Authenticate = () => {
 		console.log('Post code', value);
 	}
 	const onClickNext = (value) => {	
-		history.push('/meter-points');
+		history.push('/payment/login');
 		// return new Promise((resolve) =>{
 		// 	setTimeout(resolve, 2000);
 		// }).then(() => {

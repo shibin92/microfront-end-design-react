@@ -16,7 +16,7 @@ const PaymentLogin = () => {
 		console.log('Post code', value);
 	}
 	const onClickNext = (value) => {
-		history.push('/summary');
+		history.push('/payment/summary');
 		// return new Promise((resolve) => setTimeout(resolve, 2000));
 		// setOfferId(value);
 		// setPostCode(value);

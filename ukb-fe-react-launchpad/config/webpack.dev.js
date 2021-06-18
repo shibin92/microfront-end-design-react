@@ -19,6 +19,7 @@ const devConfig = {
       name: 'ukb_fe_react_launchpad',
       remotes: {
         onboarding: 'ukb_fe_react_onboarding@http://localhost:8084/remoteEntry.js',
+        payment:"ukb_fe_react_payment@http://localhost:8086/remoteEntry.js"
       },
       shared: packageJson.dependencies,
     }),

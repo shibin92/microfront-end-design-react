@@ -24,6 +24,7 @@ const devConfig = {
       },
 			remotes: {
 				commons:"ukb_fe_react_launchpad_commons@http://localhost:8085/commons.js",
+				payment:"ukb_fe_react_payment@http://localhost:8086/remoteEntry.js",
 			},
       shared: packageJson.dependencies,
     }),

@@ -10,8 +10,8 @@ export default ({ history }) => {
     <div>
       <Router history={history}>
         <Switch>
-          <Route path="/login" component={Login} />
-          <Route path="/summary" component={Summary} />
+          <Route path="/payment/login" component={Login} />
+          <Route path="/payment/summary" component={Summary} />
         </Switch>
       </Router>
     </div>

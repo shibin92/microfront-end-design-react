@@ -7,7 +7,7 @@ const SummarryAmount = () => {
 	let history = useHistory();
 
 	const onClickNext = (value) => {
-		history.push('/login');
+		history.push('/');
 		// return new Promise((resolve) => setTimeout(resolve, 2000));
 		// setOfferId(value);
 		// setPostCode(value);
