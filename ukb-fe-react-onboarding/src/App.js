@@ -13,8 +13,8 @@ export default ({ history }) => {
     <div>
       <Router history={history}>
         <Switch>
-          <Route exact path="/meter-points" component={MeterPoints} />
-          <Route path="/" component={StartPage} />
+          <Route exact path="/onboarding/meter-points" component={MeterPoints} />
+          <Route path="/onboarding/authenticate" component={StartPage} />
           {/* <Suspense fallback={<div>Loading...</div>}>
             <Switch>
               <Route path="/payment" component={PaymentLazy} />
